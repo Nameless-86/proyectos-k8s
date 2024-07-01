@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: database-secret
+  labels:
+    app: database
+data:
+  POSTGRES_USER:postgres
+  POSTGRES_PASSWORD:postgres
+  POSTGRES_DB:perntodo
+  PORT_DB:5432
+  PORT_SERVER:5000
+  PORT_CLIENT:3000
+  HOST_DB:db
+  DATABASE_URL:postgres://postgres:postgres@db:5432/perntodo
+
